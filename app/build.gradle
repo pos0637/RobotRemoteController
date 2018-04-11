@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.furongsoft.robotremotecontroller"
-        minSdkVersion 19
+        minSdkVersion 22
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -37,6 +37,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation group: 'com.netflix.rxjava', name: 'rxjava-android', version: '0.20.7'
+    implementation 'com.aldebaran:qisdk:1.1.7'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.github.captain-miao:grantap:1.0.3'
     implementation files('libs/Sunflower.jar')
     implementation files('libs/Msc.jar')
